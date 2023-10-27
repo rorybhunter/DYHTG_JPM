@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.awt.image.BufferStrategy;
 
 public class Game extends Canvas implements Runnable {
 
@@ -6,6 +7,7 @@ public class Game extends Canvas implements Runnable {
     private Thread thread;
     public Game(){
         new Window(1000,550, "Spooky Puzzle Game", this);
+        this.start();
     }
 
     //start thread
@@ -52,6 +54,32 @@ public class Game extends Canvas implements Runnable {
             }
         }
         stop();
+    }
+
+    // updates game. 60 times per sec
+    public void tick(){
+
+    }
+    // renders game. 1000s times per sec
+    public void render(){
+
+        // Creates a buffer of frames so there are a few frames ready to go.
+        // when one is created there are 2 more ready to go before it.
+        BufferStrategy bs = this.getBufferStrategy();
+        if (bs==null){
+            this.createBufferStrategy(3); // 3 frames buffer.
+            return;
+        }
+
+        Graphics g = bs.getDrawGraphics();
+        ////////// everything between comments will be drawn
+
+        g.setColor(Color.red);
+        g.fillRect(0,0,1000,550);
+
+        /////////
+        g.dispose();
+        bs.show();
     }
     public static void main(String[] args) {
         new Game();
