@@ -10,6 +10,10 @@ public class Game extends Canvas implements Runnable {
         new Window(1000,550, "Spooky Puzzle Game", this);
         this.start();
         handler = new Handler();
+
+        handler.addObject(new Box(100,100, ID.Block));
+        handler.addObject(new Box(200,100, ID.Block));
+
     }
 
     //start thread
