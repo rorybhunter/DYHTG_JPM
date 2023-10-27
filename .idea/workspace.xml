@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc93f4eb-2526-482d-8586-5e908c9c8f3e" name="Changes" comment="Render function now works">
-      <change afterPath="$PROJECT_DIR$/src/GameObject.java" afterDir="false" />
+    <list default="true" id="fc93f4eb-2526-482d-8586-5e908c9c8f3e" name="Changes" comment="created gameObject abstract class">
+      <change afterPath="$PROJECT_DIR$/src/Handler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698438090820</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="created gameObject abstract class">
+      <created>1698438577406</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698438577406</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -81,6 +89,7 @@
     <MESSAGE value="Created game thread" />
     <MESSAGE value="created gameloop" />
     <MESSAGE value="Render function now works" />
-    <option name="LAST_COMMIT_MESSAGE" value="Render function now works" />
+    <MESSAGE value="created gameObject abstract class" />
+    <option name="LAST_COMMIT_MESSAGE" value="created gameObject abstract class" />
   </component>
 </project>

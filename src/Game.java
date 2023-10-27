@@ -5,9 +5,11 @@ public class Game extends Canvas implements Runnable {
 
     private boolean isRunning = false;
     private Thread thread;
+    private Handler handler;
     public Game(){
         new Window(1000,550, "Spooky Puzzle Game", this);
         this.start();
+        handler = new Handler();
     }
 
     //start thread
@@ -58,7 +60,7 @@ public class Game extends Canvas implements Runnable {
 
     // updates game. 60 times per sec
     public void tick(){
-
+        handler.tick();
     }
     // renders game. 1000s times per sec
     public void render(){
@@ -77,7 +79,9 @@ public class Game extends Canvas implements Runnable {
         g.setColor(Color.red);
         g.fillRect(0,0,1000,550);
 
+
         /////////
+        handler.render(g);
         g.dispose();
         bs.show();
     }
