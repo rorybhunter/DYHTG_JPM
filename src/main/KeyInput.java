@@ -1,6 +1,8 @@
-import org.w3c.dom.css.Rect;
+package main;
 
-import java.awt.*;
+import GameObjects.GameObject;
+import GameObjects.ID;
+
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
@@ -56,9 +58,9 @@ public class KeyInput extends KeyAdapter {
 //        int key = e.getKeyCode();
 //
 //        for (int i = 0; i < handler.object.size(); i++) {
-//            GameObject temp = handler.object.get(i);
+//            GameObjects.GameObject temp = handler.object.get(i);
 //
-//            if (temp.getId() == ID.Player) {
+//            if (temp.getId() == GameObjects.ID.GameObjects.Player) {
 //                if (key == KeyEvent.VK_W) handler.setUp(false);
 //                if (key == KeyEvent.VK_A) handler.setLeft(false);
 //                if (key == KeyEvent.VK_S) handler.setRight(false);

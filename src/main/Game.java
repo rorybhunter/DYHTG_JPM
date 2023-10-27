@@ -1,3 +1,8 @@
+package main;
+
+import GameObjects.ID;
+import GameObjects.Player;
+
 import java.awt.*;
 import java.awt.image.BufferStrategy;
 
@@ -8,17 +13,15 @@ public class Game extends Canvas implements Runnable {
     private Handler handler;
     private Player player;
     public Game(){
-        new Window(1000,550, "Spooky Puzzle Game", this);
+        new Window(1000,550, "Spooky Puzzle main.Game", this);
         this.start();
 
         handler = new Handler();
         this.addKeyListener(new KeyInput(handler)); // listen for key input
 
 
-        this.player = new Player(100,100,ID.Player, handler);
+        this.player = new Player(0,0, ID.Player, handler);
         handler.addObject(player);
-        handler.addObject(new Box(200,100, ID.Hedge));
-
     }
 
     //start thread

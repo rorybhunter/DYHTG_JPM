@@ -1,3 +1,7 @@
+package main;
+
+import GameObjects.GameObject;
+
 import java.awt.*;
 import java.util.LinkedList;
 
