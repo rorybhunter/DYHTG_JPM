@@ -6,13 +6,18 @@ public class Game extends Canvas implements Runnable {
     private boolean isRunning = false;
     private Thread thread;
     private Handler handler;
+    private Player player;
     public Game(){
         new Window(1000,550, "Spooky Puzzle Game", this);
         this.start();
-        handler = new Handler();
 
-        handler.addObject(new Box(100,100, ID.Block));
-        handler.addObject(new Box(200,100, ID.Block));
+        handler = new Handler();
+        this.addKeyListener(new KeyInput(handler)); // listen for key input
+
+
+        this.player = new Player(100,100,ID.Player, handler);
+        handler.addObject(player);
+        handler.addObject(new Box(200,100, ID.Hedge));
 
     }
 
@@ -81,7 +86,7 @@ public class Game extends Canvas implements Runnable {
         ////////// everything between comments will be drawn
 
         g.setColor(Color.red);
-        g.fillRect(0,0,1000,550);
+        g.fillRect(0,0,1000,500);
 
 
         /////////

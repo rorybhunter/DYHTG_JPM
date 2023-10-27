@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc93f4eb-2526-482d-8586-5e908c9c8f3e" name="Changes" comment="created object Handler to update all GameObjects.">
-      <change afterPath="$PROJECT_DIR$/src/Box.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ID.java" afterDir="false" />
+    <list default="true" id="fc93f4eb-2526-482d-8586-5e908c9c8f3e" name="Changes" comment="created Box example GameObjects">
+      <change afterPath="$PROJECT_DIR$/src/KeyInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ID.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -91,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698439043221</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="created Box example GameObjects">
+      <created>1698442919966</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1698442919966</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -101,6 +110,7 @@
     <MESSAGE value="Render function now works" />
     <MESSAGE value="created gameObject abstract class" />
     <MESSAGE value="created object Handler to update all GameObjects." />
-    <option name="LAST_COMMIT_MESSAGE" value="created object Handler to update all GameObjects." />
+    <MESSAGE value="created Box example GameObjects" />
+    <option name="LAST_COMMIT_MESSAGE" value="created Box example GameObjects" />
   </component>
 </project>

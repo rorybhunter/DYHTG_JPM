@@ -1,8 +1,11 @@
 public enum ID {
 
     Player(),
-    Block(),
-    Crate(),
-    Bullet(),
-    Ememy();
+    Pumpkin(),
+    GoldenPumpkin(),
+    Goo(),
+    Hedge(),
+    QuestionSheet(),
+    Exit();
+
 }
