@@ -20,7 +20,6 @@ public abstract class GameObject {
     public abstract void render(Graphics g);
     public abstract Rectangle getBounds();
 
-
     // getters and setters
     public int getX() {
         return x;

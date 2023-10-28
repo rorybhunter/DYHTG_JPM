@@ -40,7 +40,6 @@ public class Hedge extends GameObject{
         g.fillRect(x,y,50,50);
     }
     }
-
     @Override
     public Rectangle getBounds() {
         return new Rectangle(x,y, width, height);
