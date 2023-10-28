@@ -14,11 +14,6 @@ public class Map {
 
             j=0;
             for (char obj : row){
-                
-                //if (obj=='P'){  //Player
-                   // Player p = new Player((j*50),(i*50), ID.Player, handler);
-                 //   handler.addObject(p);
-               // } else
                 if (obj=='p') {  //pumpkin
                     Pumpkin p = new Pumpkin((j*50),(i*50), ID.Pumpkin);
                     handler.addObject(p);
@@ -26,8 +21,8 @@ public class Map {
                     Hedge h = new Hedge((j*50),(i*50), ID.Hedge);
                     handler.addObject(h);
                 } else if (obj=='G') { //Golden pumpkin
-                    GoldenPumpkin g = new GoldenPumpkin((j*50),(i*50), ID.GoldenPumpkin);
-                    handler.addObject(g);
+                    Chest c = new Chest((j*50), i*50, ID.Chest);
+                    handler.addObject(c);
                 } else if (obj=='g') {   //goo
                     Goo g = new Goo((j*50),(i*50), ID.Goo);
                     handler.addObject(g);

@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc93f4eb-2526-482d-8586-5e908c9c8f3e" name="Changes" comment="changed handler.getObjectAtLoc to return the obj at location or null if nothing present. Updated movement.">
-      <change afterPath="$PROJECT_DIR$/src/InventoryObjects/GoldenPumpkin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/InventoryObjects/InventoryObject.java" afterDir="false" />
+    <list default="true" id="fc93f4eb-2526-482d-8586-5e908c9c8f3e" name="Changes" comment="created chest and InventoryObject, and made GoldenPumpkin an inventoryObject">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameObjects/Chest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameObjects/Chest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameObjects/GoldenPumpkin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameObjects/ID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameObjects/ID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameObjects/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameObjects/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698509202423</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="created chest and InventoryObject, and made GoldenPumpkin an inventoryObject">
+      <created>1698509611127</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1698509611127</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -163,6 +172,7 @@
     <MESSAGE value="hedges now properly display" />
     <MESSAGE value="fixed map" />
     <MESSAGE value="changed handler.getObjectAtLoc to return the obj at location or null if nothing present. Updated movement." />
-    <option name="LAST_COMMIT_MESSAGE" value="changed handler.getObjectAtLoc to return the obj at location or null if nothing present. Updated movement." />
+    <MESSAGE value="created chest and InventoryObject, and made GoldenPumpkin an inventoryObject" />
+    <option name="LAST_COMMIT_MESSAGE" value="created chest and InventoryObject, and made GoldenPumpkin an inventoryObject" />
   </component>
 </project>
