@@ -27,9 +27,9 @@ public class Map {
                 } else if (obj=='g') {   //goo
                     Goo g = new Goo((j*50),(i*50), ID.Goo);
                     handler.addObject(g);
-                } else if (obj=='q') {   // question sheet
-                    QuestionSheet q = new QuestionSheet((i*50),(j*50), ID.QuestionSheet);
-                    handler.addObject(q);
+                } else if (obj=='c') {
+                    Chest c = new Chest((j*50),(i*50), ID.Chest);
+                    handler.addObject(c);
                 } else if (obj=='E') { // exit
                     Exit e = new Exit((j*50),(i*50), ID.Exit);
                     handler.addObject(e);
@@ -54,7 +54,7 @@ public class Map {
 //        return mazeGenerator.getRawMaze();
         return  new char[][]  {
                 {'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h'},
-                {'h', 'e', 'h', 'g', 'h', 'e', 'e', 'e', 'e', 'e', 'h', 'e', 'h', 'e', 'p', 'e', 'e', 'e', 'e', 'h'},
+                {'h', 'e', 'h', 'g', 'h', 'e', 'e', 'e', 'e', 'e', 'h', 'e', 'h', 'e', 'p', 'c', 'e', 'e', 'e', 'h'},
                 {'h', 'e', 'h', 'e', 'h', 'e', 'h', 'h', 'h', 'e', 'h', 'e', 'h', 'e', 'h', 'h', 'h', 'e', 'h', 'h'},
                 {'h', 'g', 'h', 'e', 'e', 'e', 'h', 'e', 'e', 'e', 'h', 'e', 'e', 'e', 'h', 'e', 'h', 'e', 'e', 'h'},
                 {'h', 'e', 'h', 'h', 'h', 'h', 'h', 'e', 'h', 'h', 'h', 'e', 'h', 'h', 'h', 'e', 'h', 'h', 'e', 'h'},
