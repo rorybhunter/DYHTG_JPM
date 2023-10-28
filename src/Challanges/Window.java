@@ -56,8 +56,6 @@ public class Window {
         JTextField userInputField = new JTextField(20);
         JButton inputButton = new JButton(inputText);
 
-        System.out.println("Hello");
-
         frame.add(userInputField);
         frame.add(inputButton);
 
@@ -68,8 +66,10 @@ public class Window {
                 // Get the user's input from the JTextField
                 String userInput = userInputField.getText();
                 if (userInput.equals(answer)) {
+                    JOptionPane.showMessageDialog(frame, "Correct!, the pumkin lets you pass this time", "Correct", JOptionPane.INFORMATION_MESSAGE);
                     correct = true;
                 } else {
+                    JOptionPane.showMessageDialog(frame, "Wrong!, the pumkin explodes killing you", "Incorrect", JOptionPane.ERROR_MESSAGE);
                     correct = false;
                 }
 

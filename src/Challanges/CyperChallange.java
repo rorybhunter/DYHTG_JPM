@@ -11,8 +11,9 @@ public class CyperChallange extends Challange {
     @Override
     public boolean run() {
 
-        String[] words = new String[] { "String", "StringTwo" };
-        String word = words[0];
+        String[] words = new String[] { "Something Spooky and Scary is Lurking", "Trick or Treat"};
+        int msgNum = ThreadLocalRandom.current().nextInt(1, words.length);
+        String word = words[msgNum];
         char[] wordarray = word.toCharArray();
         frame.addLabel("Can you guess the Halloween Phrase", 10, 10);
 
@@ -31,8 +32,11 @@ public class CyperChallange extends Challange {
         }
         String resultString = result.toString();
         frame.addLabel(resultString, 10, 50);
+        
+        String hint = Integer.toBinaryString(offset);
+        frame.addLabel("Your hint is: " + hint, 100,100);
         try {
-            boolean answer = frame.getAnswer("", word);
+            boolean answer = frame.getAnswer("Enter Answer", word);
             return answer;
         } catch (InterruptedException e) {
             System.out.println("ERROR: Timeout");
