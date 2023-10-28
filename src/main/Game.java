@@ -15,7 +15,7 @@ public class Game extends Canvas implements Runnable {
     private Player player;
     private Map map;
     public Game(){
-        new Window(1000,550, "Spooky Puzzle main.Game", this);
+        new Window(1000,600, "Spooky Puzzle main.Game", this);
         this.start();
 
         handler = new Handler();
@@ -91,7 +91,7 @@ public class Game extends Canvas implements Runnable {
         Graphics g = bs.getDrawGraphics();
         ////////// everything between comments will be drawn
 
-        g.setColor(Color.red);
+        g.setColor(new Color(50,35,25));
         g.fillRect(0,0,1000,500);
 
 
