@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc93f4eb-2526-482d-8586-5e908c9c8f3e" name="Changes" comment="added bushes image">
-      <change afterPath="$PROJECT_DIR$/src/MazeGenerator/MazeGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MazeGenerator/Node.java" afterDir="false" />
+    <list default="true" id="fc93f4eb-2526-482d-8586-5e908c9c8f3e" name="Changes" comment="added maze gen">
+      <change afterPath="$PROJECT_DIR$/src/MazeGenerator/Cell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MazeGenerator/Maze.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameObjects/Chest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameObjects/Chest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameObjects/Goo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameObjects/Goo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/hedge.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Map.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +25,13 @@
         <option value="Enum" />
         <option value="Class" />
       </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
     </option>
   </component>
   <component name="MarkdownSettingsMigration">
@@ -49,6 +60,43 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="GameObjects" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="MazeGenerator" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Game">
+    <configuration name="Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Game" />
+      <module name="DYHTG_JPM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Maze" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MazeGenerator.Maze" />
+      <module name="DYHTG_JPM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MazeGenerator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Game" />
+        <item itemvalue="Application.Maze" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -171,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698517597760</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="added maze gen">
+      <created>1698522019451</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1698522019451</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -191,6 +246,7 @@
     <MESSAGE value="created chest and InventoryObject, and made GoldenPumpkin an inventoryObject" />
     <MESSAGE value="game exits when encounter exit" />
     <MESSAGE value="added bushes image" />
-    <option name="LAST_COMMIT_MESSAGE" value="added bushes image" />
+    <MESSAGE value="added maze gen" />
+    <option name="LAST_COMMIT_MESSAGE" value="added maze gen" />
   </component>
 </project>

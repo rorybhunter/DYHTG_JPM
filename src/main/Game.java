@@ -15,7 +15,7 @@ public class Game extends Canvas implements Runnable {
     private Player player;
     private Map map;
     public Game(){
-        new Window(1000,550, "Spooky Puzzle main.Game", this);
+        new Window(1000,600, "Spooky Puzzle main.Game", this);
         this.start();
 
         handler = new Handler();
