@@ -10,6 +10,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.concurrent.ThreadLocalRandom;
 
 import javax.swing.JOptionPane;
 
@@ -33,7 +34,15 @@ public class Player extends GameObject {
     }
 
     private void handleGooEncounter() {
-        JOptionPane.showMessageDialog(null, "You are stuck in GOO!!", "EWW GOO", JOptionPane.WARNING_MESSAGE);
+        boolean released = false;
+        while (!released){
+            JOptionPane.showMessageDialog(null, "You are stuck in GOO!!\n Try and wiggle to get out", "EWW GOO", JOptionPane.WARNING_MESSAGE);
+            int change = ThreadLocalRandom.current().nextInt(1,10);
+            if (change % 2 == 0){
+                released = true;
+            }
+
+        }
     }
 
     private void handleExitEncounter() {

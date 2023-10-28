@@ -55,10 +55,12 @@ public class Window {
         JTextField userInputField = new JTextField(20);
         JButton inputButton = new JButton(inputText);
 
-        frame.add(userInputField);
-        frame.add(inputButton);
+        panel.add(new JSeparator(SwingConstants.VERTICAL));
 
-        // Define an action listener for the button
+        panel.add(userInputField);
+        panel.add(inputButton);
+
+        // Define an action listener for the buttonw
         inputButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
