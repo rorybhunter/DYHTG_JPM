@@ -9,11 +9,12 @@ public class Goo extends GameObject{
 
     @Override
     public void tick() {
-
     }
 
     @Override
     public void render(Graphics g) {
+        g.setColor(Color.yellow);
+        g.fillRect(x,y,50,50);
 
     }
 

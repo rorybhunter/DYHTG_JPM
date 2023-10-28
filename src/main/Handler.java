@@ -1,6 +1,8 @@
 package main;
 
 import GameObjects.GameObject;
+import GameObjects.ID;
+import GameObjects.Player;
 
 import java.awt.*;
 import java.util.LinkedList;
@@ -29,6 +31,17 @@ public class Handler {
     }
     public void removeObject(GameObject temp){
         object.remove(temp);
+    }
+
+    public boolean isObjectAtLocation(int x, int y, ID type){
+        for (int i = 0; i<object.size(); i++){
+            GameObject check = object.get(i);
+            if (check.getX() == x && check.getY() == y && check.getId() == type){
+                return true;
+            }
+        }
+        return false;
+
     }
 
     public boolean isUp() {

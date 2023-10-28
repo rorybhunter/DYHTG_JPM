@@ -14,7 +14,8 @@ public class Exit extends GameObject{
 
     @Override
     public void render(Graphics g) {
-
+        g.setColor(Color.pink);
+        g.fillRect(x,y,50,50);
     }
 
     @Override
