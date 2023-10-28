@@ -44,7 +44,7 @@ public class Player extends GameObject {
 
     private void handleExitEncounter() {
         if (score <=1){
-            JOptionPane.showMessageDialog(null, "You do NOT have enough points to open the exit", "Not enough points", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(null, "You do NOT have enough points to open the exit\nYou can gain points by opening chests", "Not enough points", JOptionPane.WARNING_MESSAGE);
         } else{
         Game.exit();
         }

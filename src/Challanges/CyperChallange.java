@@ -5,13 +5,13 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class CyperChallange extends Challange {
 
-    protected Window frame = new Window(500, 500, "Spooky Puzzle - Cyper", this, new Color(232, 167, 63));
+    protected Window frame = new Window(500, 500, "Pumpkin Puzzle - Cyper", this, new Color(232, 167, 63));
 
 
     @Override
     public boolean run() {
 
-        String[] words = new String[] { "Something Spooky and Scary is Lurking", "Trick or Treat"};
+        String[] words = new String[] { "Something Spooky and Scary is Lurking", "Trick or Treat","Ghosts were spotted in the library"};
         int msgNum = ThreadLocalRandom.current().nextInt(0, words.length);
         String word = words[msgNum];
         char[] wordarray = word.toCharArray();
