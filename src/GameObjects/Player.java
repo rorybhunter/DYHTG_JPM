@@ -38,7 +38,7 @@ public class Player extends GameObject {
         while (!released){
             JOptionPane.showMessageDialog(null, "You are stuck in GOO!!\n Try and wiggle to get out", "EWW GOO", JOptionPane.WARNING_MESSAGE);
             int change = ThreadLocalRandom.current().nextInt(1,10);
-            if (change % 2 == 0){
+            if (change % 3 == 0){
                 released = true;
             }
 
