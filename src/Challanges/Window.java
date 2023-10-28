@@ -12,7 +12,6 @@ public class Window {
     protected JPanel panel = (JPanel) frame.getContentPane();
     protected boolean correct;
 
-
     public Window(int width, int height, String titl, Challange challangee, Color colour){
 
         frame.setPreferredSize(new Dimension(width, height));

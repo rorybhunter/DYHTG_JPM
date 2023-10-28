@@ -12,7 +12,7 @@ public class CyperChallange extends Challange {
     public boolean run() {
 
         String[] words = new String[] { "Something Spooky and Scary is Lurking", "Trick or Treat"};
-        int msgNum = ThreadLocalRandom.current().nextInt(1, words.length);
+        int msgNum = ThreadLocalRandom.current().nextInt(0, words.length);
         String word = words[msgNum];
         char[] wordarray = word.toCharArray();
         frame.addLabel("Can you guess the Halloween Phrase", 10, 10);
@@ -25,7 +25,6 @@ public class CyperChallange extends Challange {
                 int newAlphabetPosition = (originalAlphabetPosition + offset) % 26;
                 char newCharacter = (char) ('a' + newAlphabetPosition);
                 result.append(newCharacter);
-                System.out.println(newCharacter + " " + character);
             } else {
                 result.append(character);
             }

@@ -1,16 +1,24 @@
 package GameObjects;
+
 import main.Game;
 import main.Handler;
 
 import Challanges.CyperChallange;
 
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Timer;
+import java.util.TimerTask;
+
+import javax.swing.JOptionPane;
 
 public class Player extends GameObject {
 
     Handler handler;
-    public Player(int x, int y, ID id, Handler handler){
-        super(x,y,id);
+
+    public Player(int x, int y, ID id, Handler handler) {
+        super(x, y, id);
         this.handler = handler;
 
     }
@@ -20,24 +28,26 @@ public class Player extends GameObject {
         return obj;
     }
 
-    public void handleChestEnounter(){
-        int i =0;
+    public void handleChestEnounter() {
+        int i = 0;
     }
-    private void handleGooEncounter(){
 
+    private void handleGooEncounter() {
+        JOptionPane.showMessageDialog(null, "You are stuck in GOO!!", "EWW GOO", JOptionPane.WARNING_MESSAGE);
     }
-    private void handleExitEncounter(){
+
+    private void handleExitEncounter() {
         Game.exit();
     }
 
-    private void handlePumkinEncounter(){
+    private void handlePumkinEncounter() {
         CyperChallange challange = new CyperChallange();
         boolean result = challange.run();
-        if (!result){
+        if (!result) {
             System.out.println("FAIL");
             challange.exit();
             Game.exit();
-        } else{
+        } else {
             challange.exit();
         }
     }
@@ -84,11 +94,11 @@ public class Player extends GameObject {
         if (encounter != null) {
             if (encounter.id == ID.Chest) {
                 handleChestEnounter();
-            } else if (encounter.id==ID.Exit) {
+            } else if (encounter.id == ID.Exit) {
                 handleExitEncounter();
-            } else if (encounter.id==ID.Goo) {
+            } else if (encounter.id == ID.Goo) {
                 handleGooEncounter();
-            } else if (encounter.id==ID.Pumpkin){
+            } else if (encounter.id == ID.Pumpkin) {
                 handlePumkinEncounter();
             }
         }
@@ -97,12 +107,12 @@ public class Player extends GameObject {
     @Override
     public void render(Graphics g) {
         g.setColor(Color.blue);
-        g.fillRect(x,y,50,50);
+        g.fillRect(x, y, 50, 50);
 
     }
 
     @Override
     public Rectangle getBounds() {
-        return new Rectangle(x,y,32,48);
+        return new Rectangle(x, y, 32, 48);
     }
 }
