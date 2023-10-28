@@ -2,41 +2,89 @@ package Challanges;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.Locale;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.concurrent.CountDownLatch;
 
 public class Window {
 
     protected JFrame frame = new JFrame("Challange");
+    protected JPanel panel = (JPanel) frame.getContentPane();
+    protected boolean correct;
 
-    public Window(int width, int height, String titl, Challange challangee){
+
+    public Window(int width, int height, String titl, Challange challangee, Color colour){
 
         frame.setPreferredSize(new Dimension(width, height));
         frame.setMinimumSize(new Dimension(width, height));
         frame.setMaximumSize(new Dimension(width, height));
+
+        panel.setBackground(colour);
+
 
        // frame.add(challange);
         frame.setResizable(false);
         //frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // exit on close window
         frame.setLocationRelativeTo(null); // centre of screen
 
+
+    }
+
         //JTextField input = new JTextField();
        // frame.add(input);
 
-        frame.setVisible(true);
-    }
+       // frame.setVisible(true);
 
-    public void addLabel(String string){
-        System.out.println("Helo");
-        Label label = new Label(string);
-        //label.setAlignment(Label.CENTER);
-        frame.add(label);
+
+    public void addLabel(String string, int x, int y){
+        panel.setLayout(null);
+        JLabel label = new JLabel(string);
+        //label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        panel.add(label);
         Dimension size = label.getPreferredSize();
-        label.setBounds(100, 100, size.width, size.height);
-        frame.setVisible(true);
+        label.setBounds(x, y, size.width, size.height);
+        //frame.setVisible(true);
 
     }
 
-    public void getAnswer(String inputText){
 
+    public boolean getAnswer(String inputText, String answer) throws InterruptedException {
+        CountDownLatch latch = new CountDownLatch(1);
+
+        frame.setLayout(new FlowLayout());
+
+        JTextField userInputField = new JTextField(20);
+        JButton inputButton = new JButton(inputText);
+
+        System.out.println("Hello");
+
+        frame.add(userInputField);
+        frame.add(inputButton);
+
+        // Define an action listener for the button
+        inputButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // Get the user's input from the JTextField
+                String userInput = userInputField.getText();
+                if (userInput.equals(answer)) {
+                    correct = true;
+                } else {
+                    correct = false;
+                }
+
+                latch.countDown(); // Signal that user input is received
+            }
+        });
+
+        frame.setVisible(true);
+        System.out.println("1");
+        latch.await(); // Wait until user input is received
+        System.out.println("2");
+        return correct;
+    }
+
+    public void exit() {
+        frame.dispose();
     }
 }

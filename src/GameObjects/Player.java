@@ -2,8 +2,6 @@ package GameObjects;
 import main.Game;
 import main.Handler;
 
-import javax.swing.*;
-
 import Challanges.CyperChallange;
 
 import java.awt.*;
@@ -26,11 +24,22 @@ public class Player extends GameObject {
         int i =0;
     }
     private void handleGooEncounter(){
-        int i =0;
 
     }
     private void handleExitEncounter(){
         Game.exit();
+    }
+
+    private void handlePumkinEncounter(){
+        CyperChallange challange = new CyperChallange();
+        boolean result = challange.run();
+        if (!result){
+            System.out.println("FAIL");
+            challange.exit();
+            Game.exit();
+        } else{
+            challange.exit();
+        }
     }
 
     @Override
@@ -53,10 +62,6 @@ public class Player extends GameObject {
             }
             handler.setDown(false);
             encounter = checkForEncounters();
-            if (encounter.getId()== ID.Goo){
-                CyperChallange challange = new CyperChallange();
-                challange.run();
-            }
         }
 
         if (handler.isLeft()) {
@@ -83,6 +88,8 @@ public class Player extends GameObject {
                 handleExitEncounter();
             } else if (encounter.id==ID.Goo) {
                 handleGooEncounter();
+            } else if (encounter.id==ID.Pumpkin){
+                handlePumkinEncounter();
             }
         }
     }

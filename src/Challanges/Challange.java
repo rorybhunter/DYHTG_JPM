@@ -2,6 +2,6 @@ package Challanges;
 
 abstract class Challange {
 
-    public abstract void run();
+    public abstract boolean run();
     
 }
