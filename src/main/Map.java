@@ -1,5 +1,4 @@
 package main;
-import MazeGenerator.MazeGenerator;
 
 import GameObjects.*;
 
@@ -54,9 +53,9 @@ public class Map {
 //        return mazeGenerator.getRawMaze();
         return  new char[][]  {
                 {'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h'},
-                {'h', 'e', 'h', 'g', 'h', 'e', 'e', 'e', 'e', 'e', 'h', 'e', 'h', 'e', 'p', 'c', 'e', 'e', 'e', 'h'},
-                {'h', 'e', 'h', 'e', 'h', 'e', 'h', 'h', 'h', 'e', 'h', 'e', 'h', 'e', 'h', 'h', 'h', 'e', 'h', 'h'},
-                {'h', 'g', 'h', 'e', 'e', 'e', 'h', 'e', 'e', 'e', 'h', 'e', 'e', 'e', 'h', 'e', 'h', 'e', 'e', 'h'},
+                {'h', 'e', 'h', 'c', 'h', 'e', 'e', 'e', 'e', 'e', 'h', 'e', 'h', 'e', 'p', 'c', 'e', 'e', 'e', 'h'},
+                {'h', 'e', 'h', 'g', 'h', 'g', 'h', 'h', 'h', 'e', 'h', 'e', 'h', 'e', 'h', 'h', 'h', 'e', 'h', 'h'},
+                {'h', 'g', 'h', 'e', 'g', 'e', 'h', 'e', 'e', 'e', 'h', 'e', 'e', 'e', 'h', 'e', 'h', 'e', 'e', 'h'},
                 {'h', 'e', 'h', 'h', 'h', 'h', 'h', 'e', 'h', 'h', 'h', 'e', 'h', 'h', 'h', 'e', 'h', 'h', 'e', 'h'},
                 {'h', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'q', 'e', 'e', 'e', 'e', 'h', 'e', 'e', 'e', 'e', 'h'},
                 {'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'e', 'h', 'h', 'h', 'h', 'E', 'h'},

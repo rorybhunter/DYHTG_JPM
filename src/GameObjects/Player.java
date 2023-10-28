@@ -1,6 +1,5 @@
 package GameObjects;
 
-import InventoryObjects.InventoryObject;
 import main.Game;
 import main.Handler;
 
@@ -21,6 +20,7 @@ public class Player extends GameObject {
     Handler handler;
     ArrayList<InventoryObject> inventory = new ArrayList<InventoryObject>();
 
+    int score = 0;
 
     public Player(int x, int y, ID id, Handler handler) {
         super(x, y, id);
@@ -41,21 +41,34 @@ public class Player extends GameObject {
             chest.setOpened(true);
             addToInventory(chest.contents);
         }
+    public void handleChestEnounter() {
+        score += 1;
     }
 
     private void handleGooEncounter() {
+        boolean released = false;
+        while (!released){
+            JOptionPane.showMessageDialog(null, "You are stuck in GOO!!\n Try and wiggle to get out", "EWW GOO", JOptionPane.WARNING_MESSAGE);
+            int change = ThreadLocalRandom.current().nextInt(1,10);
+            if (change % 3 == 0){
+                released = true;
+            }
 
+        }
     }
 
     private void handleExitEncounter() {
+        if (score <=1){
+            JOptionPane.showMessageDialog(null, "You do NOT have enough points to open the exit\nYou can gain points by opening chests", "Not enough points", JOptionPane.WARNING_MESSAGE);
+        } else{
         Game.exit();
+        }
     }
 
     private void handlePumkinEncounter() {
         CyperChallange challange = new CyperChallange();
         boolean result = challange.run();
         if (!result) {
-            System.out.println("FAIL");
             challange.exit();
             Game.exit();
         } else {
