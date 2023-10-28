@@ -91,7 +91,7 @@ public class Game extends Canvas implements Runnable {
         Graphics g = bs.getDrawGraphics();
         ////////// everything between comments will be drawn
 
-        g.setColor(Color.red);
+        g.setColor(new Color(50,35,25));
         g.fillRect(0,0,1000,500);
 
 

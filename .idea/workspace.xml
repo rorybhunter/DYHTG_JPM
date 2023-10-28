@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc93f4eb-2526-482d-8586-5e908c9c8f3e" name="Changes" comment="created chest and InventoryObject, and made GoldenPumpkin an inventoryObject">
+    <list default="true" id="fc93f4eb-2526-482d-8586-5e908c9c8f3e" name="Changes" comment="game exits when encounter exit">
+      <change afterPath="$PROJECT_DIR$/src/images/hedge.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameObjects/ID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameObjects/ID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameObjects/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameObjects/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameObjects/Hedge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameObjects/Hedge.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,10 +37,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/Users/roryhunter/IdeaProjects/DYHTG_JPM/src/images",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/images" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="GameObjects" />
     </key>
@@ -155,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698509611127</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="game exits when encounter exit">
+      <created>1698510889467</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1698510889467</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -173,6 +181,7 @@
     <MESSAGE value="fixed map" />
     <MESSAGE value="changed handler.getObjectAtLoc to return the obj at location or null if nothing present. Updated movement." />
     <MESSAGE value="created chest and InventoryObject, and made GoldenPumpkin an inventoryObject" />
-    <option name="LAST_COMMIT_MESSAGE" value="created chest and InventoryObject, and made GoldenPumpkin an inventoryObject" />
+    <MESSAGE value="game exits when encounter exit" />
+    <option name="LAST_COMMIT_MESSAGE" value="game exits when encounter exit" />
   </component>
 </project>
