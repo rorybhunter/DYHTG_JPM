@@ -2,8 +2,6 @@ package main;
 
 import GameObjects.*;
 
-import java.lang.ref.PhantomReference;
-
 public class Map {
     char[][] map;
     public Map(Game game){
@@ -17,10 +15,11 @@ public class Map {
             j=0;
             for (char obj : row){
                 
-                if (obj=='P'){  //Player
-                    Player p = new Player((j*50),(i*50), ID.Player, handler);
-                    handler.addObject(p);
-                } else if (obj=='p') {  //pumpkin
+                //if (obj=='P'){  //Player
+                   // Player p = new Player((j*50),(i*50), ID.Player, handler);
+                 //   handler.addObject(p);
+               // } else
+                if (obj=='p') {  //pumpkin
                     Pumpkin p = new Pumpkin((j*50),(i*50), ID.Pumpkin);
                     handler.addObject(p);
                 } else if (obj=='h') {
@@ -43,6 +42,10 @@ public class Map {
             }
             i++;
         }
+
+        //adding the player last so it apears above all of the other entities
+        Player p = new Player(1 * 50, 1 * 50, ID.Player, handler);
+        handler.addObject(p);
     for (GameObject g: handler.object.stream().toList()){
         System.out.println(g.getX());
     }
@@ -53,15 +56,15 @@ public class Map {
         // hopefully connect this to ChatGPT to produce a new map every time
 
         return  new char[][]  {
-                {'h', 'P', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h'},
+                {'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h'},
                 {'h', 'e', 'h', 'g', 'h', 'e', 'e', 'e', 'e', 'e', 'h', 'e', 'h', 'e', 'p', 'e', 'e', 'e', 'e', 'h'},
                 {'h', 'e', 'h', 'e', 'h', 'e', 'h', 'h', 'h', 'e', 'h', 'e', 'h', 'e', 'h', 'h', 'h', 'e', 'h', 'h'},
                 {'h', 'g', 'h', 'e', 'e', 'e', 'h', 'e', 'e', 'e', 'h', 'e', 'e', 'e', 'h', 'e', 'h', 'e', 'e', 'h'},
                 {'h', 'e', 'h', 'h', 'h', 'h', 'h', 'e', 'h', 'h', 'h', 'e', 'h', 'h', 'h', 'e', 'h', 'h', 'e', 'h'},
                 {'h', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'q', 'e', 'e', 'e', 'e', 'h', 'e', 'e', 'e', 'e', 'h'},
-                {'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'e', 'h', 'h', 'h', 'h', 'e', 'E'},
+                {'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'e', 'h', 'h', 'h', 'h', 'E', 'h'},
                 {'h', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'h', 'e', 'e', 'e', 'e', 'h'},
-                {'h', 'e', 'h', 'h', 'h', 'e', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'e', 'h', 'h', 'h', 'h', 'h', 'h'},
+                {'h', 'e', 'h', 'h', 'h', 'e', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'e', 'h', 'h', 'h', 'e', 'h', 'h'},
                 {'h', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'h'},
                 {'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h', 'h'}
 

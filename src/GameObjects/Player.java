@@ -1,6 +1,7 @@
 package GameObjects;
 import main.Handler;
 import java.awt.*;
+
 public class Player extends GameObject {
 
     Handler handler;

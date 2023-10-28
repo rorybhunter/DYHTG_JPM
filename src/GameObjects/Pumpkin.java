@@ -14,6 +14,8 @@ public class Pumpkin extends GameObject{
 
     @Override
     public void render(Graphics g) {
+        g.setColor(new Color(250, 106, 2));
+        g.fillOval(x,y,50,50);
 
     }
 

@@ -13,8 +13,9 @@ public class Goo extends GameObject{
 
     @Override
     public void render(Graphics g) {
-        g.setColor(Color.yellow);
-        g.fillRect(x,y,50,50);
+        g.setColor(new Color(31, 240, 42)); //031240042
+        g.fillOval(x, y, 50, 50);
+       // g.fillRect(x,y,50,50);
 
     }
 

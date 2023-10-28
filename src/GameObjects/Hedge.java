@@ -13,7 +13,7 @@ public class Hedge extends GameObject{
     }
 @Override
     public void render(Graphics g) {
-        g.setColor(Color.green);
+        g.setColor(new Color(40, 166, 51));
         g.fillRect(x,y,50,50);
     }
 
