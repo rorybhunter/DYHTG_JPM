@@ -33,14 +33,13 @@ public class Handler {
         object.remove(temp);
     }
 
-    public boolean isObjectAtLocation(int x, int y, ID type){
-        for (int i = 0; i<object.size(); i++){
-            GameObject check = object.get(i);
-            if (check.getX() == x && check.getY() == y && check.getId() == type){
-                return true;
+    public GameObject getObjectAtLocation(int x, int y){
+        for (GameObject obj : object){
+            if (obj.getX() == x && obj.getY() == y){
+                return obj;
             }
         }
-        return false;
+        return null;
 
     }
 

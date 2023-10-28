@@ -17,7 +17,8 @@ public class Player extends GameObject {
 
         // movement
         if (handler.isUp()) {
-            if (!handler.isObjectAtLocation(x, y - 50, ID.Hedge)){
+            GameObject obj = handler.getObjectAtLocation(x, y - 50);
+            if (obj==null || obj.id != ID.Hedge){
                 y -= 50;
             }
             handler.setUp(false);
@@ -25,38 +26,36 @@ public class Player extends GameObject {
         }
 
         if (handler.isDown()) {
-            if (!handler.isObjectAtLocation(x, y + 50, ID.Hedge)){
-                y += 50;
+            GameObject obj = handler.getObjectAtLocation(x, y + 50);
+            if (obj==null || obj.id != ID.Hedge){
+                y+=50;
             }
             handler.setDown(false);
             checkForEncounters();
         }
 
         if (handler.isLeft()) {
-            if (!handler.isObjectAtLocation(x - 50, y, ID.Hedge)){
-                x -= 50;
+            GameObject obj = handler.getObjectAtLocation(x - 50, y);
+            if (obj==null || obj.id != ID.Hedge){
+                x-=50;
             }
             handler.setLeft(false);
             checkForEncounters();
         }
 
         if (handler.isRight()){
-            if (!handler.isObjectAtLocation(x + 50, y, ID.Hedge)){
-                x += 50;
+            GameObject obj = handler.getObjectAtLocation(x + 50, y);
+            if (obj==null || obj.id != ID.Hedge){
+                x+=50;
             }
             handler.setRight(false);
             checkForEncounters();
         }
     }
 
-    public void checkForEncounters(){
-        for (ID id : ID.values()){
-            if(id == ID.Player){
-                
-            } else if(handler.isObjectAtLocation(x, y, id)){
-                System.out.println(id);
-            }
-        }
+    public GameObject checkForEncounters(){
+        GameObject obj = handler.getObjectAtLocation(x,y);
+        return obj;
     }
 
     @Override
