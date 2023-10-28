@@ -1,8 +1,8 @@
 package GameObjects;
 
+import InventoryObjects.InventoryObject;
 import main.Game;
 import main.Handler;
-
 import Challanges.CyperChallange;
 
 import java.awt.*;
@@ -35,17 +35,15 @@ public class Player extends GameObject {
 
     public void handleChestEnounter(GameObject encounter) {
         Chest chest = (Chest) encounter;
-        if (!chest.isOpened()){
+        if (!chest.isOpened()) {
             //run challenge
             // if challenge complete
             chest.setOpened(true);
             addToInventory(chest.contents);
         }
-    public void handleChestEnounter() {
-        score += 1;
     }
 
-    private void handleGooEncounter() {
+        private void handleGooEncounter(){
         boolean released = false;
         while (!released){
             JOptionPane.showMessageDialog(null, "You are stuck in GOO!!\n Try and wiggle to get out", "EWW GOO", JOptionPane.WARNING_MESSAGE);
