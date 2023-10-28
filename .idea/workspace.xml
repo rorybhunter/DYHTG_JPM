@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc93f4eb-2526-482d-8586-5e908c9c8f3e" name="Changes" comment="created map class. generates a new map. currently hard coded but hopefully connect to chatGPT for new map every time">
+    <list default="true" id="fc93f4eb-2526-482d-8586-5e908c9c8f3e" name="Changes" comment="hedges now properly display">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameObjects/Hedge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameObjects/Hedge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameObjects/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameObjects/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Map.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698451930033</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="hedges now properly display">
+      <created>1698452953637</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1698452953637</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -138,6 +143,7 @@
     <MESSAGE value="Key input works to move around world" />
     <MESSAGE value="created game objects" />
     <MESSAGE value="created map class. generates a new map. currently hard coded but hopefully connect to chatGPT for new map every time" />
-    <option name="LAST_COMMIT_MESSAGE" value="created map class. generates a new map. currently hard coded but hopefully connect to chatGPT for new map every time" />
+    <MESSAGE value="hedges now properly display" />
+    <option name="LAST_COMMIT_MESSAGE" value="hedges now properly display" />
   </component>
 </project>
