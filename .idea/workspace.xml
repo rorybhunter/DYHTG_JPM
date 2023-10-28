@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc93f4eb-2526-482d-8586-5e908c9c8f3e" name="Changes" comment="game exits when encounter exit">
-      <change afterPath="$PROJECT_DIR$/src/images/hedge.png" afterDir="false" />
+    <list default="true" id="fc93f4eb-2526-482d-8586-5e908c9c8f3e" name="Changes" comment="added bushes image">
+      <change afterPath="$PROJECT_DIR$/src/MazeGenerator/MazeGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MazeGenerator/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameObjects/Hedge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameObjects/Hedge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Map.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +37,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/roryhunter/IdeaProjects/DYHTG_JPM/src/images",
+    "last_opened_file_path": "/Users/roryhunter/IdeaProjects/DYHTG_JPM/src/MazeGenerator",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/MazeGenerator" />
       <recent name="$PROJECT_DIR$/src/images" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -163,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698510889467</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="added bushes image">
+      <created>1698517597760</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1698517597760</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -182,6 +190,7 @@
     <MESSAGE value="changed handler.getObjectAtLoc to return the obj at location or null if nothing present. Updated movement." />
     <MESSAGE value="created chest and InventoryObject, and made GoldenPumpkin an inventoryObject" />
     <MESSAGE value="game exits when encounter exit" />
-    <option name="LAST_COMMIT_MESSAGE" value="game exits when encounter exit" />
+    <MESSAGE value="added bushes image" />
+    <option name="LAST_COMMIT_MESSAGE" value="added bushes image" />
   </component>
 </project>
