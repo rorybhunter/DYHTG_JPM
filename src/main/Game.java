@@ -1,6 +1,5 @@
 package main;
 
-import GameObjects.ID;
 import GameObjects.Player;
 
 import javax.swing.*;

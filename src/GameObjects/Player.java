@@ -6,10 +6,6 @@ import main.Handler;
 import Challanges.CyperChallange;
 
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.Timer;
-import java.util.TimerTask;
 import java.util.concurrent.ThreadLocalRandom;
 
 import javax.swing.JOptionPane;
@@ -17,6 +13,7 @@ import javax.swing.JOptionPane;
 public class Player extends GameObject {
 
     Handler handler;
+    int score = 0;
 
     public Player(int x, int y, ID id, Handler handler) {
         super(x, y, id);
@@ -30,7 +27,7 @@ public class Player extends GameObject {
     }
 
     public void handleChestEnounter() {
-        int i = 0;
+        score += 1;
     }
 
     private void handleGooEncounter() {
@@ -46,14 +43,17 @@ public class Player extends GameObject {
     }
 
     private void handleExitEncounter() {
+        if (score <=1){
+            JOptionPane.showMessageDialog(null, "You do NOT have enough points to open the exit", "Not enough points", JOptionPane.WARNING_MESSAGE);
+        } else{
         Game.exit();
+        }
     }
 
     private void handlePumkinEncounter() {
         CyperChallange challange = new CyperChallange();
         boolean result = challange.run();
         if (!result) {
-            System.out.println("FAIL");
             challange.exit();
             Game.exit();
         } else {
