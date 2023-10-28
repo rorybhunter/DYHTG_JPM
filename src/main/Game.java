@@ -12,6 +12,7 @@ public class Game extends Canvas implements Runnable {
     private Thread thread;
     private Handler handler;
     private Player player;
+    private Map map;
     public Game(){
         new Window(1000,550, "Spooky Puzzle main.Game", this);
         this.start();
@@ -19,9 +20,10 @@ public class Game extends Canvas implements Runnable {
         handler = new Handler();
         this.addKeyListener(new KeyInput(handler)); // listen for key input
 
-
-        this.player = new Player(0,0, ID.Player, handler);
-        handler.addObject(player);
+        //generate map
+        if (map==null){
+            map = new Map(this);
+        }
     }
 
     //start thread
@@ -96,6 +98,10 @@ public class Game extends Canvas implements Runnable {
         handler.render(g);
         g.dispose();
         bs.show();
+    }
+
+    public Handler getHandler(){
+        return handler;
     }
     public static void main(String[] args) {
         new Game();

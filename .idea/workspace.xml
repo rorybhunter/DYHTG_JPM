@@ -4,23 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc93f4eb-2526-482d-8586-5e908c9c8f3e" name="Changes" comment="Key input works to move around world">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GameObjects/Exit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GameObjects/GoldenPumpkin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GameObjects/Goo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GameObjects/Hedge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GameObjects/Pumpkin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GameObjects/QuestionSheet.java" afterDir="false" />
+    <list default="true" id="fc93f4eb-2526-482d-8586-5e908c9c8f3e" name="Changes" comment="created game objects">
+      <change afterPath="$PROJECT_DIR$/src/main/Map.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameObjects/Box.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameObjects/GameObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameObjects/ID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KeyInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/KeyInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameObjects/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698449479895</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="created game objects">
+      <created>1698450379551</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1698450379551</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -134,6 +128,7 @@
     <MESSAGE value="created object Handler to update all GameObjects." />
     <MESSAGE value="created Box example GameObjects" />
     <MESSAGE value="Key input works to move around world" />
-    <option name="LAST_COMMIT_MESSAGE" value="Key input works to move around world" />
+    <MESSAGE value="created game objects" />
+    <option name="LAST_COMMIT_MESSAGE" value="created game objects" />
   </component>
 </project>
