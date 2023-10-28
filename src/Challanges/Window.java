@@ -8,8 +8,7 @@ public class Window {
 
     protected JFrame frame = new JFrame("Challange");
 
-
-    public Window(int width, int height, String title, Challange challange){
+    public Window(int width, int height, String titl, Challange challangee){
 
         frame.setPreferredSize(new Dimension(width, height));
         frame.setMinimumSize(new Dimension(width, height));
@@ -20,17 +19,19 @@ public class Window {
         //frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // exit on close window
         frame.setLocationRelativeTo(null); // centre of screen
 
-        JTextField input = new JTextField();
-        //frame.add(input);
+        //JTextField input = new JTextField();
+       // frame.add(input);
 
         frame.setVisible(true);
     }
 
     public void addLabel(String string){
         System.out.println("Helo");
-        Label lable = new Label(string);
-        lable.setAlignment(Label.CENTER);
-        frame.add(lable);
+        Label label = new Label(string);
+        //label.setAlignment(Label.CENTER);
+        frame.add(label);
+        Dimension size = label.getPreferredSize();
+        label.setBounds(100, 100, size.width, size.height);
         frame.setVisible(true);
 
     }

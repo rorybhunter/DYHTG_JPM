@@ -3,6 +3,9 @@ import main.Game;
 import main.Handler;
 
 import javax.swing.*;
+
+import Challanges.CyperChallange;
+
 import java.awt.*;
 
 public class Player extends GameObject {
@@ -50,6 +53,10 @@ public class Player extends GameObject {
             }
             handler.setDown(false);
             encounter = checkForEncounters();
+            if (encounter.getId()== ID.Goo){
+                CyperChallange challange = new CyperChallange();
+                challange.run();
+            }
         }
 
         if (handler.isLeft()) {

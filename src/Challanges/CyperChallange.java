@@ -1,7 +1,7 @@
 package Challanges;
 
-import java.awt.Label;
 import java.util.concurrent.ThreadLocalRandom;
+
 
 public class CyperChallange extends Challange{
 
