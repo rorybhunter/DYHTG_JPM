@@ -13,16 +13,18 @@ public class Map {
         int i = 0, j = 0;
 
         for (char[] row: map){
+
+            j=0;
             for (char obj : row){
                 
                 if (obj=='P'){  //Player
                     Player p = new Player((i*50),(j*50), ID.Player, handler);
                     handler.addObject(p);
                 } else if (obj=='p') {  //pumpkin
-                    Pumpkin p = new Pumpkin((i*50),(j*50), ID.Pumpkin);
+                    Pumpkin p = new Pumpkin((j*50),(i*50), ID.Pumpkin);
                     handler.addObject(p);
                 } else if (obj=='h') {
-                    Hedge h = new Hedge((i*50),(j*50), ID.Hedge);
+                    Hedge h = new Hedge((j*50),(i*50), ID.Hedge);
                     handler.addObject(h);
                 } else if (obj=='G') { //Golden pumpkin
                     GoldenPumpkin g = new GoldenPumpkin((i*50),(j*50), ID.GoldenPumpkin);
@@ -37,10 +39,13 @@ public class Map {
                     Exit e = new Exit((i*50),(j*50), ID.Exit);
                     handler.addObject(e);
                 }
+                j++;
             }
+            i++;
         }
-
-
+    for (GameObject g: handler.object.stream().toList()){
+        System.out.println(g.getX());
+    }
     }
 
     private char[][] setNewMap(){

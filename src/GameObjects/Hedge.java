@@ -11,14 +11,14 @@ public class Hedge extends GameObject{
     public void tick() {
 
     }
-
-    @Override
+@Override
     public void render(Graphics g) {
-
+        g.setColor(Color.green);
+        g.fillRect(x,y,50,50);
     }
 
     @Override
     public Rectangle getBounds() {
-        return null;
+        return new Rectangle(x,y,50,50);
     }
 }

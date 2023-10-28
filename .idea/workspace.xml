@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc93f4eb-2526-482d-8586-5e908c9c8f3e" name="Changes" comment="created game objects">
-      <change afterPath="$PROJECT_DIR$/src/main/Map.java" afterDir="false" />
+    <list default="true" id="fc93f4eb-2526-482d-8586-5e908c9c8f3e" name="Changes" comment="created map class. generates a new map. currently hard coded but hopefully connect to chatGPT for new map every time">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameObjects/Hedge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameObjects/Hedge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameObjects/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameObjects/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Map.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698450379551</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="created map class. generates a new map. currently hard coded but hopefully connect to chatGPT for new map every time">
+      <created>1698451930033</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1698451930033</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -129,6 +137,7 @@
     <MESSAGE value="created Box example GameObjects" />
     <MESSAGE value="Key input works to move around world" />
     <MESSAGE value="created game objects" />
-    <option name="LAST_COMMIT_MESSAGE" value="created game objects" />
+    <MESSAGE value="created map class. generates a new map. currently hard coded but hopefully connect to chatGPT for new map every time" />
+    <option name="LAST_COMMIT_MESSAGE" value="created map class. generates a new map. currently hard coded but hopefully connect to chatGPT for new map every time" />
   </component>
 </project>
