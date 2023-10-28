@@ -3,6 +3,7 @@ package main;
 import GameObjects.ID;
 import GameObjects.Player;
 
+import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferStrategy;
 
@@ -102,6 +103,10 @@ public class Game extends Canvas implements Runnable {
 
     public Handler getHandler(){
         return handler;
+    }
+    public static void exit(){
+        JFrame.getFrames()[0].dispose();
+        exit();
     }
     public static void main(String[] args) {
         new Game();

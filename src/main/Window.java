@@ -17,6 +17,5 @@ public class Window {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // exit on close window
         frame.setLocationRelativeTo(null); // centre of screen
         frame.setVisible(true);
-
     }
 }
