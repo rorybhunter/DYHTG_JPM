@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc93f4eb-2526-482d-8586-5e908c9c8f3e" name="Changes" comment="Level system nearly in place">
+    <list default="true" id="fc93f4eb-2526-482d-8586-5e908c9c8f3e" name="Changes" comment="exit image added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameObjects/Exit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameObjects/Exit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Map.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,7 +266,21 @@
       <option name="project" value="LOCAL" />
       <updated>1698542619205</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="exit image added">
+      <created>1698572818374</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1698572818374</updated>
+    </task>
+    <task id="LOCAL-00025" summary="exit image added">
+      <created>1698572862325</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1698572862325</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -291,6 +306,7 @@
     <MESSAGE value="fixed errors" />
     <MESSAGE value="added player sprite and walking animation" />
     <MESSAGE value="Level system nearly in place" />
-    <option name="LAST_COMMIT_MESSAGE" value="Level system nearly in place" />
+    <MESSAGE value="exit image added" />
+    <option name="LAST_COMMIT_MESSAGE" value="exit image added" />
   </component>
 </project>

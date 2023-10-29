@@ -15,9 +15,9 @@ public class Game extends Canvas implements Runnable {
     private Player player;
     private Map map;
     private static int level;
-    public Game(){
+    public Game(int level){
         new Window(1000,600, "Spooky Puzzle main.Game", this);
-        this.level=0;
+        this.level=level;
         this.start();
 
         handler = new Handler();
@@ -117,16 +117,15 @@ public class Game extends Canvas implements Runnable {
         return handler;
     }
     public void exit() {
-//           if (level<NUM_OF_LEVELS){
-//               level++;
-//               map.map= map.setNewMap();
-//               new Window(1000,600, "Spooky Puzzle main.Game", this);
-//           }else {
+           if (level<NUM_OF_LEVELS){
+               new Game(1);
+               this.exit();
+           }else {
                JFrame.getFrames()[0].dispose();
                exit();
-//           }
+           }
     }
     public static void main(String[] args) {
-        new Game();
+        new Game(0);
     }
 }
