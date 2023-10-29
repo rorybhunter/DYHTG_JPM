@@ -8,7 +8,7 @@ import java.awt.image.BufferStrategy;
 
 public class Game extends Canvas implements Runnable {
 
-    private static final int NUM_OF_LEVELS = 1;
+    private static final int NUM_OF_LEVELS = 2;
     private boolean isRunning = false;
     private Thread thread;
     private Handler handler;
@@ -126,6 +126,6 @@ public class Game extends Canvas implements Runnable {
            }
     }
     public static void main(String[] args) {
-        new Game(0);
+        new Game(2);
     }
 }

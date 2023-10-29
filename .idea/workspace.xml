@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc93f4eb-2526-482d-8586-5e908c9c8f3e" name="Changes" comment="exit image added">
+    <list default="true" id="fc93f4eb-2526-482d-8586-5e908c9c8f3e" name="Changes" comment="levels work">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Map.java" afterDir="false" />
@@ -280,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698572862325</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="levels work">
+      <created>1698573478581</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1698573478581</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -307,6 +314,7 @@
     <MESSAGE value="added player sprite and walking animation" />
     <MESSAGE value="Level system nearly in place" />
     <MESSAGE value="exit image added" />
-    <option name="LAST_COMMIT_MESSAGE" value="exit image added" />
+    <MESSAGE value="levels work" />
+    <option name="LAST_COMMIT_MESSAGE" value="levels work" />
   </component>
 </project>
