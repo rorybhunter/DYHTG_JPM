@@ -4,6 +4,7 @@ import InventoryObjects.InventoryObject;
 import main.Game;
 import main.Handler;
 import Challanges.CyperChallange;
+import Challanges.JigSaw;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -91,6 +92,8 @@ public class Player extends GameObject {
     public void handleChestEnounter(GameObject encounter) {
         Chest chest = (Chest) encounter;
         if (!chest.isOpened()) {
+            new JigSaw();
+            
             //run challenge
             // if challenge complete
             chest.setOpened(true);

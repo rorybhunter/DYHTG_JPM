@@ -1,3 +1,5 @@
+package Challanges;
+
 import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -15,7 +17,7 @@ public class JigSaw extends JFrame implements ActionListener{
     JLabel instruction_label;
     Integer[] used_numbers = new Integer[9];
     
-    JigSaw(){
+    public JigSaw(){
         // Window Settings
         setSize(500, 500);
         setLayout(null);
