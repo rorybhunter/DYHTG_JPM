@@ -116,16 +116,17 @@ public class Game extends Canvas implements Runnable {
     public Handler getHandler(){
         return handler;
     }
-    public void exit() {
-           if (level<NUM_OF_LEVELS){
-               new Game(1);
-               this.exit();
+
+    public void exit(boolean dead) {
+           if (level<NUM_OF_LEVELS && !dead){
+               new Game(level++);
+               this.exit(dead);
            }else {
                JFrame.getFrames()[0].dispose();
-               exit();
+               exit(dead);
            }
     }
     public static void main(String[] args) {
-        new Game(2);
+        new Game(0);
     }
 }

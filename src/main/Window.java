@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Window implements ActionListener {
+public class Window {
 
     private JButton quitButton;
     Game game;
@@ -22,13 +22,5 @@ public class Window implements ActionListener {
         frame.setLocationRelativeTo(null); // centre of screen
         frame.setVisible(true);
 
-        JButton quitButton = new JButton("Give Up :(");
-        quitButton.addActionListener(this);
-
-    }
-    public void actionPerformed(ActionEvent e){
-        if (e.getSource()==quitButton){
-            game.exit();
-        }
     }
 }

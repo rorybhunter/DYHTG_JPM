@@ -29,7 +29,7 @@ public class Player extends GameObject {
     Image[] playerImageRight = new Image[2];
     int score = 0;
     Game game;
-
+    boolean dead = false;
     public Player(int x, int y, ID id, Handler handler, Game game) {
         super(x, y, id);
         this.handler = handler;
@@ -117,7 +117,7 @@ public class Player extends GameObject {
         if (score <=1){
             JOptionPane.showMessageDialog(null, "You do NOT have enough points to open the exit\nYou can gain points by opening chests", "Not enough points", JOptionPane.WARNING_MESSAGE);
         } else{
-        game.exit();
+        game.exit(dead);
         }
     }
 
@@ -126,7 +126,8 @@ public class Player extends GameObject {
         boolean result = challange.run();
         if (!result) {
             challange.exit();
-            game.exit();
+            dead=true;
+            game.exit(dead);
         } else {
             challange.exit();
         }
