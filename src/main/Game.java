@@ -8,13 +8,16 @@ import java.awt.image.BufferStrategy;
 
 public class Game extends Canvas implements Runnable {
 
+    private static final int NUM_OF_LEVELS = 1;
     private boolean isRunning = false;
     private Thread thread;
     private Handler handler;
     private Player player;
     private Map map;
+    private static int level;
     public Game(){
         new Window(1000,600, "Spooky Puzzle main.Game", this);
+        this.level=0;
         this.start();
 
         handler = new Handler();
@@ -24,6 +27,10 @@ public class Game extends Canvas implements Runnable {
         if (map==null){
             map = new Map(this);
         }
+        this.player=map.getPlayer();
+    }
+    public int getLevel() {
+        return level;
     }
 
     //start thread
@@ -100,12 +107,24 @@ public class Game extends Canvas implements Runnable {
         bs.show();
     }
 
+    public void nextLevel(){
+        level++;
+        this.map.map = this.map.setNewMap();
+        map.setMap(this.map.map);
+    }
+
     public Handler getHandler(){
         return handler;
     }
-    public static void exit(){
-        JFrame.getFrames()[0].dispose();
-        exit();
+    public void exit() {
+//           if (level<NUM_OF_LEVELS){
+//               level++;
+//               map.map= map.setNewMap();
+//               new Window(1000,600, "Spooky Puzzle main.Game", this);
+//           }else {
+               JFrame.getFrames()[0].dispose();
+               exit();
+//           }
     }
     public static void main(String[] args) {
         new Game();
