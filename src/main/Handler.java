@@ -42,6 +42,11 @@ public class Handler {
         return null;
     }
 
+    public Handler reset(){
+
+        this.object = new LinkedList<GameObject>();
+        return this;
+    }
     public boolean isUp() {
         return up;
     }

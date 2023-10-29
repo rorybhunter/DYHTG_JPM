@@ -28,11 +28,13 @@ public class Player extends GameObject {
     Image[] playerImageLeft = new Image[2];
     Image[] playerImageRight = new Image[2];
     int score = 0;
+    Game game;
 
-    public Player(int x, int y, ID id, Handler handler) {
+    public Player(int x, int y, ID id, Handler handler, Game game) {
         super(x, y, id);
         this.handler = handler;
         playerImage=getPlayerImage();
+        this.game=game;
     }
 
     private Image getPlayerImage(){
@@ -94,6 +96,8 @@ public class Player extends GameObject {
             chest.setOpened(true);
             addToInventory(chest.contents);
             score+=1;
+            JOptionPane.showMessageDialog(null, "You acquired a Golden Pumpkin!", "Congratulations!", JOptionPane.WARNING_MESSAGE);
+
         }
     }
 
@@ -113,7 +117,7 @@ public class Player extends GameObject {
         if (score <=1){
             JOptionPane.showMessageDialog(null, "You do NOT have enough points to open the exit\nYou can gain points by opening chests", "Not enough points", JOptionPane.WARNING_MESSAGE);
         } else{
-        Game.exit();
+        game.exit();
         }
     }
 
@@ -122,7 +126,7 @@ public class Player extends GameObject {
         boolean result = challange.run();
         if (!result) {
             challange.exit();
-            Game.exit();
+            game.exit();
         } else {
             challange.exit();
         }
