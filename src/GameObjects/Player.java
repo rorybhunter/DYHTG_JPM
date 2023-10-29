@@ -40,6 +40,7 @@ public class Player extends GameObject {
             // if challenge complete
             chest.setOpened(true);
             addToInventory(chest.contents);
+            score += 1;
         }
     }
 
